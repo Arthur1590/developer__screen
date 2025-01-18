@@ -27,7 +27,7 @@ export default async function RootLayout({
 	children: React.ReactNode
 	params: { locale: string }
 }) {
-	const { locale } = await params
+	const { locale } = params
 	if (!routing.locales.includes(locale as any)) {
 		redirect(`/${routing.locales[0]}`)
 	}
