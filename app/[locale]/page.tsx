@@ -19,7 +19,7 @@ export default function Home() {
 						<Image
 							width={550}
 							height={550}
-							src='/girl.jpg'
+							src={'/girl.jpg'}
 							alt='girl'
 							className='absolute top-0 left-[50%] translate-x-[-50%] max-w-[550px] w-[550px] h-[550px] max-h-[550px] object-cover brightness-50 shadow-[0_0_35px] shadow-[#00ffffb3] rounded-[50%] z-[50]'
 						/>
@@ -31,7 +31,7 @@ export default function Home() {
 							>
 								<Logo className='max-h-[50px]' />
 							</a>
-							<h1 className='text-[#fff] font-medium text-center text-3xl md:text-4xl'>
+							<h1 className='text-[#fff] font-medium text-center text-2xl md:text-3xl'>
 								{t('vip')}
 							</h1>
 							<span className='max-w-[35%] sm:max-w-[50%] w-full min-h-[1px] max-h-[1px] bg-gray-800'></span>
@@ -48,7 +48,7 @@ export default function Home() {
 								>
 									<Button
 										variant={'default'}
-										className=' bg-[#26A5E4] text-medium xl:text-[32px] text-[#fff] py-[1.5rem]'
+										className=' bg-[#26A5E4] text-medium xl:text-[27px] text-[#fff] py-[1.5rem]'
 									>
 										{t('deal')}{' '}
 										<Send

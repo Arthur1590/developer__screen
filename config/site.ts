@@ -1,5 +1,5 @@
 export const siteConfig = {
-	name: "Artur's Code | PORTFOLIO",
+	name: "Artur's Code | https://t.me/yep_its_me_01",
 	description:
 		"Hi) I'm Artur, a Fullstack Web Developer. I'm here to help you build your next project. Contact me for any question.",
 	keywords: ['', ''],

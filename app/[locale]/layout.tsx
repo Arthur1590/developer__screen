@@ -19,8 +19,6 @@ export const metadata: Metadata = {
 		title: 'brand name | VIP Escort',
 		description:
 			'SEO for your website in order to get more traffic and be seen by more people.',
-		url: 'https://www.yourwebsite.com',
-		images: 'https://www.yourwebsite.com/image.jpg',
 		type: 'website',
 	},
 }
