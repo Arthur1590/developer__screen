@@ -4,12 +4,15 @@ import { routing } from './i18n/routing';
 
 export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
-  const locale = pathname.split('/')[1]; 
+  const locale = pathname.split('/')[1];
 
   if (locale === 'en' || locale === 'ru') {
     setRequestLocale(locale);
   } else {
-    setRequestLocale(routing.defaultLocale || 'en');
+    const defaultLocale = routing.defaultLocale || 'ru';
+    const url = req.nextUrl.clone();
+    url.pathname = `/${defaultLocale}${pathname}`;
+    return NextResponse.redirect(url);
   }
 
   return NextResponse.next();

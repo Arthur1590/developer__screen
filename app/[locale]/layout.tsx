@@ -39,7 +39,7 @@ export default async function RootLayout({
 }) {
 	const { locale } = await params
 	if (!routing.locales.includes(locale as any)) {
-		redirect(`/ru`)
+		redirect(`/${routing.defaultLocale}`)
 	}
 	setRequestLocale(locale)
 	const messages = await getMessages()

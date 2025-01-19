@@ -3,19 +3,15 @@ import { ThemeSwitch } from '../ui/ThemeSwitch'
 import { Navbar } from './Navbar'
 import { Container } from './Container'
 import { LangSwitch } from '../ui/LangSwitch'
-import { Logo } from './Icons'
 
 export const Header = () => {
 	return (
 		<Container>
-			<header className='sticky top-0 z-50 w-full bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 py-[1rem] px-8 rounded-b-lg'>
-				<div className='flex items-center justify-between'>
-					<Logo className='max-h-[50px]' />
-					<Navbar className='hidden sm:flex items-center gap-4' />
-					<div className='flex items-center gap-4'>
-						<LangSwitch />
-						<ThemeSwitch />
-					</div>
+			<header className='sticky top-0 z-50 w-full bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 py-[1rem] lg:px-8 rounded-b-lg'>
+				<div className='flex items-center justify-center gap-4'>
+					<Navbar className='flex items-center gap-4' />
+					<LangSwitch />
+					<ThemeSwitch />
 				</div>
 			</header>
 		</Container>

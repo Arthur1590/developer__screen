@@ -9,8 +9,19 @@ export const Navbar: NextPage<Props> = ({ className }) => {
 	return (
 		<ul className={`${className}`}>
 			<li className='flex items-center gap-2'>
-				<span>8 (888) 888-88-88</span>
-				<a href='#' target='_blank' rel='noopener noreferrer'>
+				<a
+					href='https://t.me/elysianescorts'
+					target='_blank'
+					rel='noopener noreferrer'
+					className='text-[12px]'
+				>
+					8 (888) 888-88-88
+				</a>
+				<a
+					href='https://t.me/elysianescorts'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
 					<Telegram className='h-[36px] w-[36px]' />
 				</a>
 				<span>24/7</span>
