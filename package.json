@@ -11,16 +11,20 @@
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.4",
     "@radix-ui/react-slot": "^1.1.1",
+    "aos": "^3.0.0-beta.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.16.4",
     "lucide-react": "^0.469.0",
+    "motion": "^11.18.1",
     "next": "15.1.4",
     "next-intl": "^3.26.3",
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-resizable-panels": "^2.1.7",
+    "sass": "^1.83.4",
+    "sharp": "^0.33.5",
     "swiper": "^11.2.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
@@ -28,6 +32,7 @@
     "webgl-fluid-enhanced": "^0.8.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

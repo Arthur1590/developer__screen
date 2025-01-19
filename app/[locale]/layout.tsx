@@ -13,6 +13,16 @@ export const metadata: Metadata = {
 	title: 'brand name | VIP Escort',
 	description:
 		'SEO for your website in order to get more traffic and be seen by more people.',
+	keywords: 'VIP Escort, luxury escort, escort services, premium escort',
+	robots: 'index, follow',
+	openGraph: {
+		title: 'brand name | VIP Escort',
+		description:
+			'SEO for your website in order to get more traffic and be seen by more people.',
+		url: 'https://www.yourwebsite.com',
+		images: 'https://www.yourwebsite.com/image.jpg',
+		type: 'website',
+	},
 }
 
 const railway = Raleway({
@@ -25,11 +35,11 @@ export default async function RootLayout({
 	params,
 }: {
 	children: React.ReactNode
-	params: Promise<{ locale: string }>;
+	params: Promise<{ locale: string }>
 }) {
-	const { locale } = await params;
+	const { locale } = await params
 	if (!routing.locales.includes(locale as any)) {
-		redirect(`/${routing.locales[0]}`)
+		redirect(`/ru`)
 	}
 	setRequestLocale(locale)
 	const messages = await getMessages()
@@ -37,7 +47,7 @@ export default async function RootLayout({
 	return (
 		<html lang={locale} suppressHydrationWarning>
 			<body
-				className={`${railway.className} antialiased min-h-svh w-full overflow-x-hidden text-primary `}
+				className={`${railway.className} antialiased min-h-svh w-full overflow-x-hidden text-primary`}
 			>
 				<NextIntlClientProvider messages={messages}>
 					<Theme_Provider
